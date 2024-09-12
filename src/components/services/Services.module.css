@@ -1,0 +1,124 @@
+.container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.services-row {
+    margin-top: 155px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services-left h2 {
+    font-family: Roboto;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.98px;
+    text-align: left;
+    color: #211F54;
+}
+
+.services-btn {
+    border: 1px solid #EFF0F6;
+    color: #211F54;
+    background: #fff;
+    box-shadow: 0px 4px 10px 0px #14142B0A;
+}
+
+.services-btn:hover {
+    background: #bdbdbd;
+}
+
+.services-cards {
+    justify-content: center;
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 38px;
+}
+
+.services-card {
+    max-width: 388px;
+    width: 100%;
+    height: 494px;
+    border: 1px solid #EFF0F6;
+    border-radius: 16px;
+    box-shadow: 0px 2px 6px 0px #14142B0A;
+    text-align: center;
+    justify-content: center;
+    padding: 83px 38px 29px 38px;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.services-card:hover {
+    transform: scale(0.9);
+    transition: 0.8s;
+    box-shadow: 0px 22px 26px 0px #14142B0A;
+    background: #f9f9f9;
+}
+
+.services-card h3 {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34.01px;
+    text-align: center;
+    color: #211F54;
+}
+
+.services-card p {
+    font-family: Roboto;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 30.01px;
+    text-align: center;
+    color: #6E7191;
+}
+
+@media (max-width: 768px) {
+    .services-row {
+        flex-direction: column;
+    }
+    
+    .services-cards {
+        flex-direction: column;
+
+    }
+
+    .services-left {
+        margin-bottom: 20px;
+    }
+
+    .services-right {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-row {
+        flex-direction: column;
+    }
+
+    .services-cards {
+        flex-direction: column;
+    }
+
+    .services-left {
+        margin-bottom: 10px;
+    }
+
+    .services-right {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:321px) {
+    .services-card h3,p {
+        width: 320px;
+    }
+
+}
